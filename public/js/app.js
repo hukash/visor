@@ -1,22 +1,4 @@
-// $LAB.script("js/test.js");
-
-var MyController = Backbone.Controller.extend({
-  routes : {
-    "say/ :something" : "say"        
-  },
-
-  say : function(something) {
-        alert(something);
-  }
+jQuery(function() {
+  $('ul > li:first').fadeOut(); 
+  $('ul > li:first').fadeIn(); 
 });
-var yC = new MyController;
-
-Backbone.history.start();
-
-console.log("loaded");
-
-var MyModel = Backbone.Model.extend({});
-
-var starwars = new MyModel();
-starwars.set({title: "StarWars"});
-console.log(starwars.get('title'));

@@ -35,17 +35,19 @@
  
   <footer></footer>
  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/lib/jquery-1.5.1.js"%3E%3C/script%3E'))</script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/lib/jquery-ui-1.8.11.custom.min.js"%3E%3C/script%3E'))</script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script> -->
+  <!-- <script>!window.jQuery && document.write(unescape('%3Cscript src="js/lib/jquery-1.5.1.js"%3E%3C/script%3E'))</script> -->
+  <!-- <script>!window.jQuery && document.write(unescape('%3Cscript src="js/lib/jquery-ui-1.8.11.custom.min.js"%3E%3C/script%3E'))</script> -->
 
   <script src="js/lib/LAB.js"></script>
 
   <script>
     $LAB
-      .script("js/lib/underscore-min.js").wait()
-      .script("js/lib/backbone-min.js")
+      .script("js/lib/jquery-1.5.1.js")
+      .script("js/lib/jquery-ui-1.8.11.custom.min.js")
+      .script("js/lib/underscore-min.js")
+      .script("js/lib/backbone-min.js").wait()
       .script("js/app.js?v=1").wait();
   </script>
   <!--[if lt IE 7 ]>
